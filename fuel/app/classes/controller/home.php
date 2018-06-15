@@ -11,7 +11,7 @@
  */
 
 /**
- * The Welcome Controller.
+ * The Home Controller.
  *
  * A basic controller example.  Has examples of how to set the
  * response body and status.
@@ -19,29 +19,17 @@
  * @package  app
  * @extends  Controller
  */
-class Controller_Welcome extends Controller
+class Controller_Home extends Controller
 {
 	/**
-	 * The basic welcome message
+	 * The basic home message
 	 *
 	 * @access  public
 	 * @return  Response
 	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('welcome/index'));
-	}
-
-	/**
-	 * A typical "Hello, Bob!" type example.  This uses a Presenter to
-	 * show how to use them.
-	 *
-	 * @access  public
-	 * @return  Response
-	 */
-	public function action_hello()
-	{
-		return Response::forge(Presenter::forge('welcome/hello'));
+		return Response::forge(View::forge('home/index'));
 	}
 
 	/**
@@ -52,6 +40,6 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_404()
 	{
-		return Response::forge(Presenter::forge('welcome/404'), 404);
+		return Response::forge(Presenter::forge('home/404'), 404);
 	}
 }

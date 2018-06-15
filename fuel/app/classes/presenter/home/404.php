@@ -1,12 +1,12 @@
 <?php
 
 /**
- * The welcome 404 presenter.
+ * The home 404 presenter.
  *
  * @package  app
  * @extends  Presenter
  */
-class Presenter_Welcome_404 extends Presenter
+class Presenter_Home_404 extends Presenter
 {
 	/**
 	 * Prepare the view data, keeping this in here helps clean up
